@@ -1,0 +1,27 @@
+---
+title: Adaptiva
+layout: default
+---
+
+<section class="adaptiva">
+  <ul class="gallery">
+    {% for image in site.data.adaptiva %}
+    <li class="gallery-item" style="background-image: url('{{image.img}}')">
+      <div class="js-light-box" style="display: none;">
+        <div class="js-light-box-close">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="js-light-box-content">
+          <div class="js-light-box-img">
+            <img src="{{image.img}}" alt="" {% if image.portrait %}class="portrait"{% endif %}>
+          </div>
+          <div class="js-light-box-txt">
+            <span>{{image.text}}</span>
+          </div>
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

@@ -1,0 +1,30 @@
+<h1>Let's talk</h1>
+
+<form class="contact-form">
+  <p>
+    <span class="form-txt">Hi, my name is </span>
+    <input class="contact-field" type="text" name="name" placeholder="Name*" required>
+    <span class="form-txt">, and you can reach me at </span>
+    <input class="contact-field" type="email" name="_replyto" placeholder="Email*" required>
+    <span class="form-txt">. I'm with </span>
+    <input class="contact-field" type="text" name="company" placeholder="Company">
+    <span class="form-txt"> and we have a budget of </span>
+    <input class="contact-field" type="text" name="budget" placeholder="$$$">.
+  </p>
+  <textarea name="message" class="contact-message" placeholder="Tell me more about your project!*" required></textarea>
+  <input type="hidden" name="_next" value="{{site.url}}/contact/#contact"/>
+  <div class="vertical-center-row space-between">
+    <input type="submit" value="Send" class="contact-send">
+    <span style="color: #ccc;">* Required</span>
+  </div>
+</form>
+<div class="confirmation">
+    <div class="content">
+      <div class="submit-success" style="display: none;">
+        <div class="submit-success-content">
+          <p>Message received! I'll be in touch soon.</p>
+          <div class="submit-close">Okay cool</div>
+        </div>
+      </div>
+    </div>
+  </div>

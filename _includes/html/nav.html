@@ -1,0 +1,44 @@
+<section class="navigation">
+  <h1><a href="{{"/" | relative_url }}"> Adam Haney</a></h1>
+  <nav class="nav">
+    <ul class="selects">
+      <!-- <h3>Selects</h3> -->
+      <li>
+        {% if page.url == "/photos/" %}
+        <a class="is-current" href="{{"/photos" | relative_url }}">Photos</a>
+        {% else %}
+        <a href="{{"/photos" | relative_url }}">Photos</a>
+        {% endif %}
+      </li>
+      <!-- <li><a href="#0">Motion</a></li> -->
+      <li>{% if page.url == "/design/" %}
+          <a class="is-current" href="{{"/design" | relative_url }}">Design</a>
+          {% else %}
+          <a href="{{"/design" | relative_url }}">Design</a>
+          {% endif %}
+        </li>
+      <!-- <h3>Projects</h3>
+      <li>
+        {% if page.url == "/projects/adaptiva/" %}
+        <a class="is-current" href="{{"/projects/adaptiva" | relative_url }}">Adaptiva</a>
+        {% else %}
+        <a href="{{"/projects/adaptiva" | relative_url }}">Adaptiva</a>
+        {% endif %}
+      </li>
+      <li><a href="#0">Run Pretty Far</a></li>
+      <li><a href="#0">Norris Frederick</a></li>
+      <li><a href="#0">Cut &amp; Caliber</a></li>
+      <li><a href="#0">Adaptiva</a></li> -->
+    </ul>
+    {%if page.gallery%}
+    <div class="js-light-box-arrows">
+      <div class="js-light-box-arrow prev">
+        {%include svg/triangle.svg color="white" width="24"%}
+      </div>
+      <div class="js-light-box-arrow next">
+        {%include svg/triangle.svg color="white" width="24"%}
+      </div>
+    </div>
+    {%endif%}
+  </nav>
+</section>

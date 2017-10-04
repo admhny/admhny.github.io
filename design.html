@@ -1,0 +1,13 @@
+---
+title: Photos
+layout: default
+gallery: true
+---
+
+<section class="design">
+  <ul class="grid-container gallery">
+    {% for image in site.data.design %}
+    {% include html/gallery.html %}
+    {% endfor %}
+  </ul>
+</section>

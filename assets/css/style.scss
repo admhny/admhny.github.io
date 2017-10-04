@@ -1,0 +1,91 @@
+---
+---
+* {
+  box-sizing: border-box;
+  font-family: "europa",sans-serif;
+}
+{% include scss/color.scss %}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: $blue;
+}
+body {
+  text-align: left;
+  display: block;
+  padding-left: 150px;
+}
+{% include scss/zindex.scss %}
+{% include scss/breakpoints.scss %}
+{% include scss/transitions.scss %}
+{% include scss/spacing.scss %}
+{% include scss/type.scss %}
+{% include scss/icons.scss %}
+{% include scss/kokkaku.scss %}
+
+// Navigation
+{% include scss/nav.scss %}
+
+// Gallery
+{% include scss/gallery.scss %}
+
+// Homepage
+{% include scss/homepage.scss %}
+
+// Top Level Navigation
+
+  // Photos
+img {
+  max-width: 100%;
+}
+.content-wrap {
+  position: relative;
+  padding: 10px;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: calc(100% - 50px);
+    height: 25px;
+    @include z-index-3;
+  }
+}
+.content-wrap-inner {
+  padding-top: 15px;
+  padding-right: 5px;
+  overflow: auto;
+  height: calc(100vh - 50px);
+  position: relative;
+}
+// Adaptiva Title
+  .project-title {
+  font-size: 2em;
+  color: $blue;
+  margin-top: 0;
+  text-align: center;
+  padding-top: 25px;
+}
+.contact-button {
+  margin: auto;
+  background-color: $white;
+  color: $green;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.068;
+  width: 100%;
+  transition: 400ms ease-in-out;
+  &:hover {
+    background-color: $blue;
+    cursor: pointer;
+    color: $white;
+    opacity: 50%;
+  }
+}

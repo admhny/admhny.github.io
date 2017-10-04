@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://use.typekit.net/ntp7bec.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <head>
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>{% if page.title %}{{page.title}} | {% endif %}Adam Haney</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    {% include html/nav.html %}
+    <section class="content-wrap">
+      <div class="content-wrap-inner">
+      {{content}}
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    {% if page.validate %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
+    {% endif %}
+    <script type="text/javascript" src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  </body>
+</html>
