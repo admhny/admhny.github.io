@@ -17,6 +17,7 @@
   }
   @media #{$tablet},#{$mobile} {
     padding-top: 25px;
+    background-color: $blue;
   }
 }
 .js-light-box {
