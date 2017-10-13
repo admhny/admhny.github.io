@@ -36,7 +36,7 @@
   height: 100%;
   width: calc(100% - 175px);
   position: absolute;
-  top: 75px;
+  top: 0;
   left: 175px;
   @media #{$tablet}, #{$mobile} {
     width: 100%;
@@ -76,7 +76,7 @@
   span {
     font-size: 1em;
     color: $white;
-    padding-top: 50px;
+    padding-top: 200px;
     position: relative;
     right: -450px;
     transition: 1000ms;
