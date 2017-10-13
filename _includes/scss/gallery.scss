@@ -56,6 +56,9 @@
   &.portrait {
     background-size: contain;
   }
+  @media #{$tablet}, #{$mobile} {
+    background-size: contain;
+  }
 }
 .js-light-box-txt {
   position: absolute;
