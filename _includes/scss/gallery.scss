@@ -161,7 +161,7 @@
     border: $light-gray;
   }
   @media #{$tablet}, #{$mobile} {
-    top: 670px;
+    top: 650px;
     right: 50px;
     width: 60px;
     font-size: 10px;
@@ -188,7 +188,7 @@
   @media #{$tablet}, #{$mobile} {
     position: fixed;
     left: 5px;
-    bottom: 5px;
+    bottom: 10px;
     width: auto;
   }
   @media #{$tablet}, #{$mobile} {
