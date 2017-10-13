@@ -150,6 +150,13 @@
     color: $white;
     opacity: 50%;
   }
+  @media #{$tablet}, #{$mobile} {
+    top: 80px;
+    right: 10px;
+    width: 62px;
+    font-size: 10px;
+    
+  }
 }
 .js-light-box-arrows {
   opacity: 0;
