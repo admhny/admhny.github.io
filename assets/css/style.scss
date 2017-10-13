@@ -53,16 +53,6 @@ img {
 .content-wrap {
   position: relative;
   padding: 10px;
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
-    width: calc(100% - 50px);
-    height: 25px;
-    @include z-index-3;
-  }
 }
 .content-wrap-inner {
   padding-top: 15px;

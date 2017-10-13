@@ -101,13 +101,13 @@
   }
 }
 .js-light-box-close {
-  position: relative;
+  position: absolute;
   @include z-index-5;
   display: block;
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
   top: 20px;
-  left: 10px;
+  left: 20px;
   cursor: pointer;
   span {
     position: absolute;
@@ -115,9 +115,8 @@
     right: 0;
     display: block;
     background-color: $light-gray;
-    width: 10px;
+    width: 20px;
     height: 2px;
-    z-index: 4;
     &:first-child {
       transform: rotate(45deg);
     }
@@ -139,7 +138,9 @@
     }
   }
   @media #{$tablet},#{$mobile} {
-    top: 88px;
+    top: 93px;
+    right: 25px;
+    left: auto;
   }
 }
 .js-more-info {
@@ -153,20 +154,22 @@
   cursor: pointer;
   transition: 400ms ease-in-out;
   @include z-index-9;
-  &:hover {
-    background-color: $blue;
-    cursor: pointer;
-    color: $white;
-    opacity: 50%;
-    border: $light-gray;
+  @media #{$all-desktop} {
+    &:hover {
+      background-color: $blue;
+      cursor: pointer;
+      color: $white;
+      opacity: .5;
+      border: $light-gray;
+    }
   }
   @media #{$tablet}, #{$mobile} {
-    top: 650px;
-    right: 50px;
-    width: 60px;
+    top: auto;
+    bottom: 25px;
+    right: 25px;
     font-size: 10px;
     text-align: center;
-    padding: 2px;
+    padding: 1em 2em;
     background-color: transparent;
     color: $light-gray;
     border: 2px solid $light-gray;
@@ -187,13 +190,10 @@
   }
   @media #{$tablet}, #{$mobile} {
     position: fixed;
-    left: 5px;
-    bottom: 10px;
+    left: 15px;
+    bottom: 20px;
     width: auto;
-  }
-  @media #{$tablet}, #{$mobile} {
-    left: 0;
-    padding-left: 5px;
+    padding: 0;
   }
 }
 .js-light-box-arrow {
