@@ -152,10 +152,10 @@
     border: $light-gray;
   }
   @media #{$tablet}, #{$mobile} {
-    top: 80px;
+    top: 70px;
     right: 10px;
-    width: 5px;
-    font-size: 10px;
+    width: 48px;
+    font-size: 8px;
     text-align: center;
   }
 }
