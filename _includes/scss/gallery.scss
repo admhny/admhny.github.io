@@ -104,8 +104,8 @@
   position: relative;
   @include z-index-5;
   display: block;
-  height: 4px;
-  width: 16px;
+  height: 10px;
+  width: 10px;
   top: 20px;
   left: 22px;
   cursor: pointer;
@@ -115,8 +115,8 @@
     right: 0;
     display: block;
     background-color: $light-gray;
-    width: 12px;
-    height: 4px;
+    width: 10px;
+    height: 2px;
     z-index: 4;
     &:first-child {
       transform: rotate(45deg);
@@ -161,7 +161,7 @@
     border: $light-gray;
   }
   @media #{$tablet}, #{$mobile} {
-    top: 680px;
+    bottom: 50px;
     right: 50px;
     width: 60px;
     font-size: 10px;
