@@ -182,6 +182,9 @@
     top: 91%;
     text-align: center;
   }
+  @media #{$tablet}, #{$mobile} {
+    left: 5px;
+  }
 }
 .js-light-box-arrow {
   display: inline-block;
@@ -197,9 +200,5 @@
     svg {
       transform: scale(1.3);
     }
-  }
-  @media #{$tablet}, #{$mobile} {
-    left: 5px;
-    transform: scale(.5)
   }
 }
