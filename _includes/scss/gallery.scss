@@ -153,10 +153,14 @@
   }
   @media #{$tablet}, #{$mobile} {
     top: 68px;
+    right: 0
     width: 50px;
     font-size: 8px;
     text-align: center;
     padding: .1px;
+    background-color: $blue;
+    color: $white;
+    position: absolute;
   }
 }
 .js-light-box-arrows {
