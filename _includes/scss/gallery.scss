@@ -152,8 +152,8 @@
     border: $light-gray;
   }
   @media #{$tablet}, #{$mobile} {
-    top: 70px;
-    right: 10px;
+    top: 68px;
+    left: 50%;
     width: 50px;
     font-size: 8px;
     text-align: center;
