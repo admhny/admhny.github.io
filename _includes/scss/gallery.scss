@@ -55,12 +55,13 @@
   transform:translate(-50%,-50%);
   &.portrait {
     background-size: contain;
+    @media #{$tablet}, #{$mobile} {
+      background-size: contain;
+      max-height: 600px;
+    }
   }
   @media #{$tablet}, #{$mobile} {
     background-size: contain;
-    .portrait {
-      max-height: 600px;
-    }
   }
 }
 .js-light-box-txt {
