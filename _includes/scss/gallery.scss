@@ -58,6 +58,7 @@
   }
   @media #{$tablet}, #{$mobile} {
     background-size: contain;
+    max-height: 350px;
   }
 }
 .js-light-box-txt {
