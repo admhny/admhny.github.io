@@ -161,7 +161,7 @@
     border: $light-gray;
   }
   @media #{$tablet}, #{$mobile} {
-    bottom: 50px;
+    top: 670px;
     right: 50px;
     width: 60px;
     font-size: 10px;
@@ -169,7 +169,6 @@
     padding: 2px;
     background-color: transparent;
     color: $light-gray;
-    position: absolute;
     border: 2px solid $light-gray;
     @include z-index-9;
   }
