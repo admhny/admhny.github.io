@@ -57,7 +57,7 @@
     background-size: contain;
   }
   @media #{$tablet}, #{$mobile} {
-    background-size: contain;
+    background-size: cover;
     max-height: 600px;
   }
 }
