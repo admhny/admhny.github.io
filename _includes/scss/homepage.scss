@@ -1,22 +1,23 @@
 // Profile Photo
 
-// .adam {
-//   display: block;
-//   padding: 1em;
-//   float: left;
-//   max-height: 100%;
-//   overflow: hidden;
-//
-//   img {
-//     display: block;
-//     float: left;
-//     width: 35%;
-//     padding-top: 2em;
-//     @media #{$tablet}, #{$mobile} {
-//       display: none;
-//     }
-//   }
-// }
+.adam {
+  display: block;
+  padding: 1em;
+  float: left;
+  left: 0;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+  img {
+    display: block;
+    float: left;
+    width: 200px;
+    padding-top: 2em;
+    @media #{$tablet}, #{$mobile} {
+      // display: none;
+    }
+  }
 // Bio
 // .text-box {
 //   max-width: 100%;
@@ -31,9 +32,7 @@
 
 .lets-talk {
   color: $black;
-  padding-left: 100px;
-  margin-top: 25px;
-  margin-bottom: 5px;
+  margin-bottom: $spacing-normal;
   @media #{$tablet}, #{$mobile} {
     padding-left: 0;
   }
@@ -41,12 +40,8 @@
 // Contact Form
 
 .contact-form {
-  padding-top: 2em;
-  padding-left: 100px;
   display: block;
-  width: 55%;
   overflow: visible;
-  float: left;
   @media #{$mobile} {
     margin-bottom: $spacing-normal;
     width: 100%;
@@ -113,8 +108,7 @@
 .form-bio {
   font-size: $type-small;
   color: $blue;
-  width: 59%;
-  padding-left: 100px;
+  margin-bottom: $spacing-normal;
   @media #{$mobile}, #{$tablet} {
     width: 100%;
     padding: 0;
