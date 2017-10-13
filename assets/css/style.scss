@@ -28,7 +28,6 @@ body {
   padding-left: 150px;
   @media #{$mobile}, #{$tablet} {
     padding: 50px 0;
-    background-color: $blue;
   }
 }
 html,
@@ -64,9 +63,6 @@ img {
     height: 25px;
     @include z-index-3;
   }
-  @media #{$mobile}, #{$tablet} {
-    background-color: $blue;
-  }
 }
 .content-wrap-inner {
   padding-top: 15px;
@@ -76,7 +72,6 @@ img {
   position: relative;
   @media #{$mobile}, #{$tablet} {
     padding-top: 0;
-    background-color: $blue;
   }
 }
 // Adaptiva Title

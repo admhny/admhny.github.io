@@ -14,9 +14,6 @@
         cursor: pointer;
       }
     }
-    @media #{$tablet},#{$mobile} {
-      background-color: $blue;
-    }
   }
   @media #{$tablet},#{$mobile} {
     padding-top: 25px;
