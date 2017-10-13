@@ -36,7 +36,7 @@
   height: 100%;
   width: calc(100% - 175px);
   position: absolute;
-  top: 0;
+  top: 75px;
   left: 175px;
   @media #{$tablet}, #{$mobile} {
     width: 100%;
@@ -149,7 +149,7 @@
     cursor: pointer;
     color: $white;
     opacity: 50%;
-    border: $blue;
+    border: $light-gray;
   }
   @media #{$tablet}, #{$mobile} {
     top: 80px;
