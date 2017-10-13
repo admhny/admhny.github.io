@@ -56,9 +56,7 @@
   &.portrait {
     background-size: contain;
     @media #{$tablet}, #{$mobile} {
-      background-size: cover;
-      max-height: 550px;
-      max-width: 500px;
+      background-size: contain;
     }
   }
   @media #{$tablet}, #{$mobile} {
