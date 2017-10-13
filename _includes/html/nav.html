@@ -1,4 +1,7 @@
 <section class="navigation">
+  <div class="adam-haney-logo">
+    {%include svg/adam-haney-logo.svg width="66px" height="66px"%}
+  </div>
   <h1><a href="{{"/" | relative_url }}"> Adam Haney</a></h1>
   <nav class="nav">
     <ul class="selects">
@@ -17,6 +20,12 @@
           <a href="{{"/design" | relative_url }}">Design</a>
           {% endif %}
         </li>
+        <li>{% if page.url == "/contact/" %}
+            <a class="is-current" href="{{"/index" | relative_url }}">Contact</a>
+            {% else %}
+            <a href="{{"/index" | relative_url }}">Contact</a>
+            {% endif %}
+          </li>
       <!-- <h3>Projects</h3>
       <li>
         {% if page.url == "/projects/adaptiva/" %}
@@ -30,15 +39,15 @@
       <li><a href="#0">Cut &amp; Caliber</a></li>
       <li><a href="#0">Adaptiva</a></li> -->
     </ul>
-    {%if page.gallery%}
-    <div class="js-light-box-arrows">
-      <div class="js-light-box-arrow prev">
-        {%include svg/triangle.svg color="white" width="24"%}
-      </div>
-      <div class="js-light-box-arrow next">
-        {%include svg/triangle.svg color="white" width="24"%}
-      </div>
-    </div>
-    {%endif%}
   </nav>
+  {%if page.gallery%}
+  <div class="js-light-box-arrows">
+    <div class="js-light-box-arrow prev">
+      {%include svg/triangle.svg color="white" width="24"%}
+    </div>
+    <div class="js-light-box-arrow next">
+      {%include svg/triangle.svg color="white" width="24"%}
+    </div>
+  </div>
+  {%endif%}
 </section>
