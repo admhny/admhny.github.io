@@ -170,7 +170,7 @@
     background-color: transparent;
     color: $light-gray;
     position: absolute;
-    border: $light-gray;
+    border: 2px solid $light-gray;
     @include z-index-9;
   }
 }
