@@ -57,8 +57,10 @@
     background-size: contain;
   }
   @media #{$tablet}, #{$mobile} {
-    background-size: cover;
-    max-height: 600px;
+    background-size: contain;
+    .portrait {
+      max-height: 600px;
+    }
   }
 }
 .js-light-box-txt {
