@@ -4,14 +4,18 @@
   background-color: $white;
   .gallery-item {
     transition: 400ms ease-in-out;
-    &:hover {
-      opacity: .5;
-      cursor: pointer;
-    }
-    &.is-expanded {
+  }
+  @media #{$all-desktop} {
+    .gallery-item {
       &:hover {
-        opacity: 1;
+        opacity: .5;
         cursor: pointer;
+      }
+      &.is-expanded {
+        &:hover {
+          opacity: 1;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -41,6 +45,7 @@
   @media #{$tablet}, #{$mobile} {
     width: 100%;
     left: 0;
+    background-color: $blue;
   }
 }
 .js-light-box-img {
