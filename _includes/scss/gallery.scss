@@ -60,14 +60,25 @@
   transform:translate(-50%,-50%);
   &.portrait {
     background-size: contain;
-    @media #{$tablet}, #{$mobile} {
-      background-size: contain;
-      max-height: 500px;
-      max-width: 500px;
-    }
   }
   @media #{$tablet}, #{$mobile} {
     background-size: contain;
+    &.portrait {
+      background-size: cover;
+      height: calc(100% - 68px);
+      top: 68px;
+      left: 0;
+      transform: none;
+      &::before {
+        content: '';
+        width: 100%;
+        height: 150px;
+        display: block;
+        bottom: 0;
+        position: absolute;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba($blue, 0)), color-stop(19%, rgba($blue, 0)), to(rgba($blue, 1)));background: linear-gradient(to bottom, rgba($blue, 0) 0%, rgba($blue, 0) 19%, rgba($blue, 1) 100%);
+      }
+    }
   }
 }
 .js-light-box-txt {
@@ -111,7 +122,7 @@
   cursor: pointer;
   span {
     position: absolute;
-    top: 0;
+    top: 9px;
     right: 0;
     display: block;
     background-color: $light-gray;
@@ -191,7 +202,7 @@
   @media #{$tablet}, #{$mobile} {
     position: fixed;
     left: 15px;
-    bottom: 20px;
+    bottom: 10px;
     width: auto;
     padding: 0;
   }
