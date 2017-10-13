@@ -198,4 +198,8 @@
       transform: scale(1.3);
     }
   }
+  @media #{$tablet}, #{$mobile} {
+    left: 5px;
+    transform: scale(.5)
+  }
 }
