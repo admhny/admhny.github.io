@@ -161,16 +161,15 @@
     border: $light-gray;
   }
   @media #{$tablet}, #{$mobile} {
-    top: 67px;
-    right: 0;
+    bottom: 25px;
+    right: 50px;
     width: 50px;
     font-size: 8px;
     text-align: center;
     padding: .1px;
     background-color: $blue;
     color: $white;
-    position: absolute;
-    border: $blue;
+    border: $light-gray;
   }
 }
 .js-light-box-arrows {
