@@ -152,7 +152,7 @@
   right: 20px;
   cursor: pointer;
   transition: 400ms ease-in-out;
-  @include z-index-4;
+  @include z-index-9;
   &:hover {
     background-color: $blue;
     cursor: pointer;
@@ -187,9 +187,9 @@
   }
   @media #{$tablet}, #{$mobile} {
     position: fixed;
-    left: 0;
+    left: 5px;
     bottom: 5px;
-    width: 100px;
+    width: auto;
   }
   @media #{$tablet}, #{$mobile} {
     left: 0;
