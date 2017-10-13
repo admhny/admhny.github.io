@@ -149,6 +149,7 @@
     cursor: pointer;
     color: $white;
     opacity: 50%;
+    border: 0;
   }
   @media #{$tablet}, #{$mobile} {
     top: 80px;
