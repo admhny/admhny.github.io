@@ -63,6 +63,9 @@ img {
     height: 25px;
     @include z-index-3;
   }
+  @media #{$mobile}, #{$tablet} {
+    background-color: $blue;
+  }
 }
 .content-wrap-inner {
   padding-top: 15px;
