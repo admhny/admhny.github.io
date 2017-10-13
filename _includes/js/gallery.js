@@ -63,7 +63,7 @@ $('.js-light-box-close').click(function(e){
 });
 
 $('.js-more-info').click(function(){
-
+  $('.js-light-box-close').toggleClass('is-hidden');
   $(this).text(function(i, text){
     return text === "Show info" ? "Hide info" : "Show info";
   });
