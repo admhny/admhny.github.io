@@ -189,6 +189,7 @@
     position: fixed;
     left: 0;
     bottom: 5px;
+    width: 100px;
   }
   @media #{$tablet}, #{$mobile} {
     left: 0;
