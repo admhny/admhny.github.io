@@ -119,7 +119,7 @@
   }
   &:hover  {
     span {
-      background-color: $green;
+      background-color: $blue;
       &:first-child {
         transform: rotate(-45deg);
       }
@@ -145,7 +145,7 @@
   transition: 400ms ease-in-out;
   @include z-index-4;
   &:hover {
-    background-color: $green;
+    background-color: $blue;
     cursor: pointer;
     color: $white;
     opacity: 50%;
@@ -155,7 +155,7 @@
     right: 10px;
     width: 62px;
     font-size: 10px;
-    
+    text-align: center;
   }
 }
 .js-light-box-arrows {
