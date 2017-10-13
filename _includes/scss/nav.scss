@@ -37,6 +37,7 @@
       color: $blue;
       @media #{$tablet}, #{$mobile} {
         color: $white;
+        width: 100%;
       }
     }
   }
