@@ -175,7 +175,7 @@
   @media #{$tablet}, #{$mobile} {
     position: fixed;
     left: 0;
-    top: 90%;
+    bottom: 10px;
   }
   @media #{$tablet}, #{$mobile} {
     left: 0;
