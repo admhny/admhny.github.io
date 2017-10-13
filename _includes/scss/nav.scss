@@ -29,7 +29,7 @@
     display: block;
     clear: both;
     cursor: pointer;
-    padding-left: 50px;
+    padding-left: 24px;
     padding-top: 0;
     margin-bottom: $spacing-small;
     color: $blue;
@@ -52,7 +52,7 @@
       margin: 0;
       position: absolute;
       top: 50%;
-      left: 150px;
+      left: 200px;
       transform: translate(-50%,-50%);
     }
   }
