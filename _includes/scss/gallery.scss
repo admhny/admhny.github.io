@@ -168,7 +168,7 @@
   right: 20px;
   cursor: pointer;
   transition: 400ms ease-in-out;
-  @include z-index-9;
+  @include z-index-7;
   @media #{$all-desktop} {
     &:hover {
       background-color: $blue;
@@ -188,7 +188,7 @@
     background-color: transparent;
     color: $light-gray;
     border: 2px solid $light-gray;
-    @include z-index-9;
+    @include z-index-7;
   }
 }
 .js-light-box-arrows {

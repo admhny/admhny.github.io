@@ -7,14 +7,13 @@
   left: 0;
   max-height: 100%;
   overflow: hidden;
+  @media #{$tablet}, #{$mobile} {
+    max-width: 50%;
+  }
 }
   img {
     display: block;
     float: left;
-    // width: 200px;
-    @media #{$tablet}, #{$mobile} {
-      // display: none;
-    }
   }
 // Bio
 // .text-box {

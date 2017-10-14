@@ -17,7 +17,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  @include z-index-9;
+  @include z-index-3;
   overflow: visible;
   background: $white;
   height: 100%;
@@ -33,6 +33,7 @@
     padding-top: 0;
     margin-bottom: $spacing-small;
     color: $blue;
+    @include z-index-8;
     a {
       color: $blue;
       @media #{$tablet}, #{$mobile} {
@@ -70,6 +71,9 @@
     padding-top: 0;
     @media #{$tablet}, #{$mobile} {
       padding: 0;
+      right: 20px;
+      position: absolute;
+      top: 100px;
     }
     // margin-top: 0;
     li {
@@ -98,17 +102,63 @@
       }
     }
     @media #{$tablet}, #{$mobile} {
+      overflow: hidden;
       position: fixed;
-      width: 100px;
-      height: 150px;
-      top: 68px;
-      left: -200px;
+      width: 100%;
+      height: 0;
+      top: 0;
       background-color: $blue;
-      transition: 400ms ease-in-out;
+      transition: 200ms ease-in-out;
+      @include vertical-center;
       &.is-triggered {
-        left: 0;
-        top: 68px;
-        margin-top: 0;
+        height: 100%;
       }
     }
   }
+  .js-nav-trigger {
+    display: none;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: $spacing-normal;
+    @include z-index-8;
+    span {
+      background-color: $light-gray;
+      display: block;
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      -webkit-transition: 600ms $transition-ease-in;
+      transition: 600ms $transition-ease-in;
+      &:first-child {
+        top: 9px;
+      }
+      &:last-child {
+        top: 15px;
+        width: 16px;
+        right: 0;
+      }
+    }
+    &.is-clicked {
+      span {
+        top: 11px;
+        background: $yellow;
+        &:first-child {
+          -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
+        }
+        &:last-child {
+          width: 24px;
+          right: auto;
+          -webkit-transform: rotate(-135deg);
+                  transform: rotate(-135deg);
+        }
+      }
+    }
+    @media #{$tablet}, #{$mobile} {
+   display: block;
+ }
+}

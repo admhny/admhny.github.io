@@ -1,3 +1,3 @@
-$('.adam-haney-logo').click(function() {
+$('.js-nav-trigger').click(function() {
   $('.nav').toggleClass('is-triggered');
 });
