@@ -119,6 +119,7 @@
         height: 100%;
         text-align: right;
         opacity: 1;
+        @include z-index-5;
       }
     }
   }
