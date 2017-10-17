@@ -70,10 +70,13 @@
     padding-left: 10px;
     padding-top: 0;
     @media #{$tablet}, #{$mobile} {
-      padding: 5px;
-      right: 20px;
+      padding: 10px;
+      left: 50%;
       position: absolute;
-      top: 100px;
+      top: 300px;
+      text-align: center;
+      transform: translate(-50%,-50%);
+      background-color: rgba($blue,.90);
     }
     // margin-top: 0;
     li {
@@ -109,11 +112,13 @@
       top: 0;
       font-size: 26px;
       background-color: $blue;
-      transition: 200ms ease-in-out;
+      transition: 500ms ease-in-out;
+      opacity: 0;
       @include vertical-center;
       &.is-triggered {
         height: 100%;
         text-align: right;
+        opacity: 1;
       }
     }
   }
