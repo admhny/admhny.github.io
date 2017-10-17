@@ -67,7 +67,7 @@ img {
 // Adaptiva Title
   .project-title {
   font-size: 2em;
-  color: $dark-black;
+  color: $blue;
   margin-top: 0;
   text-align: center;
   padding-top: 25px;
@@ -85,7 +85,7 @@ img {
   width: 100%;
   transition: 400ms ease-in-out;
   &:hover {
-    background-color: $dark-black;
+    background-color: $blue;
     cursor: pointer;
     color: $white;
     opacity: 50%;
