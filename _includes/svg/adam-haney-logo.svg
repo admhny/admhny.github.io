@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg{%if include.width%} width="{{include.width}}"{%endif%}{%if include.height%} height="{{include.height}}"{%endif%} viewBox="0 0 750.11 763.11" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<style>.admhny-1{fill:#20344c;}.admhny-2{fill:#fdfdfd;}</style>
+<style>.admhny-1{fill:#232635;}.admhny-2{fill:#fdfdfd;}</style>
 </defs>
 <title>adam-haney-logo_1</title>
 <g data-name="Layer 2">
