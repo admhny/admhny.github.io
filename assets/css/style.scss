@@ -53,6 +53,9 @@ img {
 .content-wrap {
   position: relative;
   padding: 10px;
+  @media #{$mobile}, #{$tablet} {
+    padding: 0;
+  }
 }
 .content-wrap-inner {
   padding-top: 15px;

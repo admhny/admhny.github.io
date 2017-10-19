@@ -2,12 +2,12 @@
 
 .adam {
   display: block;
-  padding-top: 1em;
+  padding-top: 2em;
   float: left;
   left: 0;
   max-height: 100%;
   overflow: hidden;
-  @media #{$tablet}, #{$mobile} {
+  @media #{$mobile} {
     max-width: 50%;
     margin-bottom: 0;
   }
@@ -31,10 +31,13 @@
 .lets-talk {
   color: $black;
   margin-bottom: $spacing-normal;
-  @media #{$tablet}, #{$mobile} {
+  @media #{$mobile} {
     padding-left: 0;
     max-width: 200px;
     margin-top: 20px;
+    @media #{$tablet} {
+      padding-top: 10px;
+    }
   }
 }
 // Contact Form
