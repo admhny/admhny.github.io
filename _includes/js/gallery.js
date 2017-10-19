@@ -61,10 +61,11 @@ $('.gallery-item').click(function(){ // When .gallery-item is clicked
     .children('.js-light-box')
     .fadeIn(1000);
   $('.js-light-box-arrows').addClass('is-visible');
-  $('html, body').css('overflow','hidden')
-    .bind('touchmove', function(e){
-      e.preventDefault();
-    });
+  $('html, body') // disable scrolling when lightbox is visible
+      .css({'overflow':'hidden'})
+      .bind('touchmove', function(e){
+        e.preventDefault();
+      });
   $(document).keydown(function(e) { // user hits keys after clicking an image
      switch(e.which) {
          case 37: prevImg(); // LEFT: trigger previous image
