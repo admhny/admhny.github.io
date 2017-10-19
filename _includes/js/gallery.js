@@ -50,6 +50,18 @@ $('.gallery-item').click(function(){ // When .gallery-item is clicked
     .children('.js-light-box')
     .fadeIn(1000);
   $('.js-light-box-arrows').addClass('is-visible');
+  $(document).keydown(function(e) { // user hits keys after clicking an image
+     switch(e.which) {
+         case 37: prevImg(); // LEFT: trigger previous image
+         break;
+
+         case 39: nextImg(); // RIGHT: trigger next image
+         break;
+
+         default: return; // exit this handler for other keys
+     }
+     e.preventDefault(); // make sure screen doesn't scroll or anything dumb
+   });
 });
 
 $('.js-light-box-close').click(function(e){
@@ -64,7 +76,7 @@ $('.js-light-box-close').click(function(e){
 
 $('.js-more-info').click(function(){
   $('.js-light-box-close').toggleClass('is-hidden');
-  $(this).text(function(i, text){
+  $('.js-more-info').text(function(i, text){
     return text === "Show info" ? "Hide info" : "Show info";
   });
   $('.js-light-box-txt').toggleClass('is-displayed');
@@ -72,3 +84,15 @@ $('.js-more-info').click(function(){
 
 $('.js-light-box-arrow.prev').click(prevImg);
 $('.js-light-box-arrow.next').click(nextImg);
+
+// Swipe Gestures
+
+$('.js-light-box').swipe({ // user swipes on slide
+  swipeRight:function() { // user swipes right <3
+    prevImg(); // run previous image function
+  },
+  swipeLeft:function() { // user swipes left </3
+    nextImg(); // run next image function
+  },
+  threshold:68 // min swipe length of 68px
+});
