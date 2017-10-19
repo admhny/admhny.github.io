@@ -4,6 +4,10 @@
   background-color: $white;
   .gallery-item {
     transition: 400ms ease-in-out;
+    @media #{$tablet},#{$mobile} {
+      padding: 0;
+      margin-bottom: $spacing-smallest;
+    }
   }
   @media #{$all-desktop} {
     .gallery-item {
