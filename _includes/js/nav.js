@@ -1,6 +1,3 @@
-$('.js-nav-trigger').click(function() {
-  $('.nav').toggleClass('is-triggered');
-});
-$('.adam-haney-logo').click(function() {
-  $('.nav').toggleClass('is-triggered');
+$('.js-nav-trigger, .adam-haney-logo').click(function() {
+  $('.nav, .js-nav-trigger').toggleClass('is-triggered');
 });

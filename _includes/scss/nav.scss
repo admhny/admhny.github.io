@@ -132,7 +132,7 @@
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     right: $spacing-normal;
-    @include z-index-8;
+    @include z-index-7;
     span {
       background-color: $light-gray;
       display: block;
@@ -150,10 +150,10 @@
         right: 0;
       }
     }
-    &.is-clicked {
+    &.is-triggered {
       span {
         top: 11px;
-        background: $blue;
+        background: $light-gray;
         &:first-child {
           -webkit-transform: rotate(-45deg);
                   transform: rotate(-45deg);
@@ -167,6 +167,6 @@
       }
     }
     @media #{$tablet}, #{$mobile} {
-   display: block;
- }
-}
+      display: block;
+    }
+  }
