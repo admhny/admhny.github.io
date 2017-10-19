@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   background-color: $white;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   .gallery-item {
     transition: 400ms ease-in-out;
     @media #{$mobile} {
