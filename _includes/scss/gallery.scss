@@ -4,7 +4,7 @@
   background-color: $white;
   .gallery-item {
     transition: 400ms ease-in-out;
-    @media #{$tablet},#{$mobile} {
+    @media #{$mobile} {
       padding: 0;
       margin-bottom: $spacing-smallest;
     }
@@ -24,7 +24,7 @@
     }
   }
   @media #{$tablet},#{$mobile} {
-    padding-top: 25px;
+    padding-top: 28px;
   }
 }
 .js-light-box {
