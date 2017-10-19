@@ -147,9 +147,9 @@
   }
   &:hover  {
     span {
-      background-color: $blue;
+      background-color: $light-gray;
       &:first-child {
-        transform: rotate(-45deg);
+        transform: rotate(-135deg);
       }
       &:last-child {
         transform: rotate(45deg);

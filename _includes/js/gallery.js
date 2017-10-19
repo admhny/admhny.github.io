@@ -44,12 +44,27 @@ function nextImg() {
   }
 }
 
+function closeLightbox() {
+  $('.js-light-box')
+    .fadeOut(1000)
+    .parent('.gallery-item')
+      .removeClass('is-expanded');
+  $('.js-light-box-arrows').removeClass('is-visible');
+  $('html, body').removeAttr('style')
+    .unbind('touchmove');
+  return false;
+}
+
 $('.gallery-item').click(function(){ // When .gallery-item is clicked
   $(this)
     .addClass('is-expanded')
     .children('.js-light-box')
     .fadeIn(1000);
   $('.js-light-box-arrows').addClass('is-visible');
+  $('html, body').css('overflow','hidden')
+    .bind('touchmove', function(e){
+      e.preventDefault();
+    });
   $(document).keydown(function(e) { // user hits keys after clicking an image
      switch(e.which) {
          case 37: prevImg(); // LEFT: trigger previous image
@@ -58,21 +73,16 @@ $('.gallery-item').click(function(){ // When .gallery-item is clicked
          case 39: nextImg(); // RIGHT: trigger next image
          break;
 
+         case 27: closeLightbox(); // Esc: close light box
+         break;
+
          default: return; // exit this handler for other keys
      }
      e.preventDefault(); // make sure screen doesn't scroll or anything dumb
    });
 });
 
-$('.js-light-box-close').click(function(e){
-  e.stopPropagation;
-  $(this).parent('.js-light-box')
-    .fadeOut(1000)
-    .parent('.gallery-item')
-      .removeClass('is-expanded');
-  $('.js-light-box-arrows').removeClass('is-visible');
-  return false;
-});
+$('.js-light-box-close').click(closeLightbox);
 
 $('.js-more-info').click(function(){
   $('.js-light-box-close').toggleClass('is-hidden');
@@ -93,6 +103,9 @@ $('.js-light-box').swipe({ // user swipes on slide
   },
   swipeLeft:function() { // user swipes left </3
     nextImg(); // run next image function
+  },
+  swipeDown:function() {
+    closeLightbox();
   },
   threshold:68 // min swipe length of 68px
 });
