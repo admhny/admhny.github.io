@@ -51,7 +51,7 @@ function closeLightbox() {
       .removeClass('is-expanded');
   $('.js-light-box-arrows').removeClass('is-visible');
   $('html, body').removeAttr('style')
-    .unbind('touchmove, pinchZoom');
+    .unbind('touchmove, pinchZoom, doubleTap');
   return false;
 }
 
@@ -63,7 +63,7 @@ $('.gallery-item').click(function(){ // When .gallery-item is clicked
   $('.js-light-box-arrows').addClass('is-visible');
   $('html, body') // disable scrolling when lightbox is visible
       .css({'overflow':'hidden'})
-      .bind('touchmove, pinchZoom', function(e){
+      .bind('touchmove, pinchZoom, doubleTap', function(e){
         e.preventDefault();
       });
   $(document).keydown(function(e) { // user hits keys after clicking an image
