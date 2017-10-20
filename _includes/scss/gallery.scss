@@ -94,7 +94,7 @@
   height: 100%;
   width: 250px;
   max-width: 450px;
-  padding: 60% 25px 25px;
+  padding: 110px 25px 25px;
   transition: 1000ms;
   @include z-index-3;
   h2 {
@@ -126,6 +126,9 @@
       right: 0;
       opacity: 1;
     }
+  }
+  @media #{$tablet}, #{$mobile} {
+    padding: 60% 25px 25px;
   }
 }
 .js-light-box-close {
