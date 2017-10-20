@@ -1,19 +1,29 @@
 - img: /assets/img/photos/steven.jpg
+  title: 'Steven Cornfield'
   text: "This is Steven, co-founder of Cut & Caliber. I had the privilege of working with Cut & Caliber to help create content for marketing and set the tone for the company's over-all look and feel."
 
 - img: /assets/img/photos/kyle.jpg
+  title: 'Kyle Reading'
   text: 'Kyle is the co-founder of Cut & Caliber. I was very pleased with how this photo of him turned out. It portrays being clean-cut and bold.'
 
 - img: /assets/img/photos/cutandcaliber.jpg
+  title: 'Cut &  Caliber'
   text: 'Cut & Caliber specializes in personal care and lifestyle products for the man that is bold, brave, & adventurous.'
+
+- img: /assets/img/photos/nolan.jpg
+  title: 'Beka & Nolan Charlton'
+  text: "This is Beka & Nolan Charlton on their wedding day. I took this at the reception as the sun was setting in the hills of East Wenatchee, WA."
 
 - img: /assets/img/photos/norris.jpg
   portrait: true
+  title: 'Norris Frederick'
   text: 'I got to work with Norris Frederick to help share his story and journey to the 2016 Rio Olympics. This project included headshots and a web series called Road To Gold.'
 
 - img: /assets/img/photos/tony.jpg
   portrait: true
+  title: 'Tony Thompson'
   text: 'Tony Thompson is many things. This is a dope photo I took of him in Seattle.'
 
 - img: /assets/img/photos/seattle-people-strange-parts.jpg
+  title: 'Strange Parts'
   text: 'Strange Parts is a dynamic music project comprised of Attia Taylor and Corey Duncan.'

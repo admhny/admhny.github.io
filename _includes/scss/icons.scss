@@ -1,5 +1,11 @@
 .icon {
   &.white {
+    fill: $white;
+  }
+  &.blue {
+    fill: $blue;
+  }
+  &.light-gray {
     fill: $light-gray;
   }
 }
