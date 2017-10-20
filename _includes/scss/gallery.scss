@@ -97,29 +97,24 @@
   padding: 110px 25px 25px;
   transition: 1000ms;
   @include z-index-3;
-  h2 {
-    right: -450px;
+  h2, span {
     transition: 1500ms;
     opacity: 0;
     display: block;
   }
   span {
+    right: -450px;
     font-size: 1em;
     color: $white;
     padding-top: 0;
     position: relative;
-    right: -450px;
-    transition: 1000ms;
     opacity: 0;
-    display: block;
   }
   &.is-displayed {
     background-color: rgba($blue,.90);
     width: 100%;
     h2 {
-      display: block;
       color: $light-gray;
-      right: 0;
       opacity: 1;
     }
     span {
