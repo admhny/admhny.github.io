@@ -1,17 +1,18 @@
 $('.js-nav-trigger, .adam-haney-logo').click(function() {
   $('.nav, .js-nav-trigger').toggleClass('is-triggered');
+  $('html, body')
+    .toggleClass('overflow-hidden')
+    .on('touchmove', function(e){
+    e.preventDefault();
+  });
 });
 
 function closeNav() {
-  $('.nav')
-    .fadeOut(500)
-    .parent('.nav')
-      .removeClass('is-triggered');
-  $('.js-light-box-arrows').removeClass('is-visible');
-  $('html, body').removeAttr('style')
-    .unbind('touchmove, pinchZoom');
-  return false;
+  $('.nav, .js-nav-trigger').toggleClass('is-triggered');
+  $('html, body').removeClass('overflow-hidden')
+  .off('touchmove');
 }
+
 $('.nav').swipe({ // user swipes on slide
   swipeUp:function() {
     closeNav();
