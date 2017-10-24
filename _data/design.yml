@@ -1,4 +1,5 @@
 - img: /assets/img/design/april-fools.png
+  title: 'April Fools'
   text: "I make illustrations for Adaptiva's social media sometimes. I particularly enjoyed this one."
 
 # - img: /assets/img/design/my-it-forum.jpg
@@ -8,7 +9,9 @@
 #   text: 'PBR&B four loko vexillologist, fap blue bottle fanny pack austin prism cronut shoreditch. Shoreditch occupy beard 3 wolf moon.'
 
 - img: /assets/img/design/twitter-1k.jpg
-  text: 'I made this Isometric illustration for Adaptiva reaching 1,000 followers.'
+  title: '1K Twitter Follwers'
+  text: 'I made this Isometric illustration for Adaptiva reaching 1,000 followers on Twitter.'
 
 - img: /assets/img/design/windows-10-primer.png
-  text: 'Adaptiva needed an illustration to convey navigation for this blog. So, I illustrated this scene of a ship navigating with the stars.'
+  title: 'Windows 10 Primer'
+  text: 'Adaptiva needed an illustration for a blog on navigating Windows 10. So, I illustrated this scene of a ship navigating with the stars.'
