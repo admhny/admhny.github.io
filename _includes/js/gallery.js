@@ -110,3 +110,16 @@ $('.js-light-box').swipe({ // user swipes on slide
   },
   threshold:68 // min swipe length of 68px
 });
+
+function closeInfo() {
+  $('.js-light-box-txt').toggleClass('is-displayed');
+  $('html, body').removeClass('overflow-hidden')
+  .off('touchmove');
+}
+
+$('.js-light-box-txt').swipe({ // user swipes on slide
+  swipeRight:function() {
+    closeInfo();
+  },
+  threshold:68 // min swipe length of 68px
+});
