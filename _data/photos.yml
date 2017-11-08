@@ -14,6 +14,10 @@
   title: 'Beka & Nolan Charlton'
   text: "This is Beka & Nolan Charlton on their wedding day. I took this at the reception as the sun was setting in the hills of East Wenatchee, WA."
 
+- img: /assets/img/photos/seattle-people-strange-parts.jpg
+  title: 'Strange Parts'
+  text: 'Strange Parts is a dynamic music project comprised of Attia Taylor and Corey Duncan.'
+
 - img: /assets/img/photos/norris.jpg
   portrait: true
   title: 'Norris Frederick'
@@ -23,7 +27,3 @@
   portrait: true
   title: 'Tony Thompson'
   text: 'Tony Thompson is many things. This is a dope photo I took of him in Seattle.'
-
-- img: /assets/img/photos/seattle-people-strange-parts.jpg
-  title: 'Strange Parts'
-  text: 'Strange Parts is a dynamic music project comprised of Attia Taylor and Corey Duncan.'
