@@ -58,10 +58,10 @@ img {
   }
 }
 .content-wrap-inner {
-  padding-top: 15px;
-  padding-right: 5px;
+  // padding-top: 15px;
+  // padding-right: 5px;
   overflow: auto;
-  height: calc(100vh - 50px);
+  // height: calc(100vh - 50px);
   position: relative;
   @media #{$mobile}, #{$tablet} {
     padding-top: 68px;
