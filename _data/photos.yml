@@ -23,7 +23,7 @@
   title: 'Norris Frederick'
   text: 'I got to work with Norris Frederick to help share his story and journey to the 2016 Rio Olympics. This project included headshots and a web series called Road To Gold.'
 
-- img: /assets/img/photos/tony.jpg
-  portrait: true
-  title: 'Tony Thompson'
-  text: 'Tony Thompson is many things. This is a dope photo I took of him in Seattle.'
+# - img: /assets/img/photos/tony.jpg
+#   portrait: true
+#   title: 'Tony Thompson'
+#   text: 'Tony Thompson is many things. This is a dope photo I took of him in Seattle.'
