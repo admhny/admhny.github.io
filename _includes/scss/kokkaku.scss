@@ -256,13 +256,17 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  height: 90vw;
+  flex-direction: column;
+  @media #{$tablet}, #{$mobile} {
+    flex-direction: row;
+    height: 100%;
+  }
 }
 // Tile
 // Requires .overflow on parent .color-block
