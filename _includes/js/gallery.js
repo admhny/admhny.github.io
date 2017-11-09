@@ -45,10 +45,16 @@ function nextImg() {
 }
 
 function closeLightbox() {
+  
   $('.js-light-box')
-    .fadeOut(1000)
-    .parent('.gallery-item')
-      .removeClass('is-expanded');
+    .fadeOut(1000, function(){
+
+      $(this).children('.js-light-box-content')
+        .removeAttr('style');
+
+    }).parent('.gallery-item')
+        .removeClass('is-expanded');
+
   $('.js-light-box-arrows').removeClass('is-visible');
   $('html, body').removeAttr('style')
     .unbind('touchmove, pinchZoom');
@@ -99,16 +105,100 @@ $('.js-light-box-arrow.next').click(nextImg);
 // Swipe Gestures
 
 $('.js-light-box').swipe({ // user swipes on slide
-  swipeRight:function() { // user swipes right <3
-    prevImg(); // run previous image function
+
+  swipeStatus:function(event, phase, directon, distance){
+
+    var $lbContent = $(this).children('.js-light-box-content');
+
+    if (directon=='left'){
+
+      if (phase=='move') {
+
+        $lbContent.css({
+
+          'left': '-' + (distance/2) + '%'
+
+        });
+
+      }
+
+      if (phase=='cancel') {
+
+        $lbContent.removeAttr('style');
+
+      }
+
+      if (phase=='end') {
+
+         nextImg();
+
+        $lbContent.removeAttr('style');
+
+      }
+
+    }
+
+    if (directon=='right'){
+
+      if (phase=='move') {
+
+        $lbContent.css({
+
+          'left': (distance/2) + '%'
+
+        });
+
+      }
+
+      if (phase=='cancel') {
+
+        $lbContent.removeAttr('style');
+
+      }
+
+      if (phase=='end') {
+
+         prevImg();
+
+        $lbContent.removeAttr('style');
+
+      }
+
+    }
+
+    if (directon=='down'){
+
+      if (phase=='move') {
+
+        $lbContent.css({
+
+          'top': (distance/2) + '%'
+
+        });
+
+      }
+
+      if (phase=='cancel') {
+
+        $lbContent.removeAttr('style');
+
+      }
+
+      if (phase=='end') {
+
+         closeLightbox();
+
+      }
+
+    }
+
   },
-  swipeLeft:function() { // user swipes left </3
-    nextImg(); // run next image function
-  },
-  swipeDown:function() {
-    closeLightbox();
-  },
-  threshold:68 // min swipe length of 68px
+
+  triggerOnTouchEnd: false,
+  triggerOnTouchLeave: false,
+  threshold: 200,
+  cancelThreshold: 42
+
 });
 
 // function closeInfo() {
