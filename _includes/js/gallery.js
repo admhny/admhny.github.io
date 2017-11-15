@@ -45,7 +45,7 @@ function nextImg() {
 }
 
 function closeLightbox() {
-  
+
   $('.js-light-box')
     .fadeOut(1000, function(){
 
@@ -166,7 +166,7 @@ $('.js-light-box').swipe({ // user swipes on slide
 
     }
 
-    if (directon=='down'){
+    if (directon=='down') {
 
       if (phase=='move') {
 

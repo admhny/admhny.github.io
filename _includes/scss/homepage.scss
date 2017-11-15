@@ -197,10 +197,9 @@
   }
 
   &:hover {
-    background: $green;
-    color: $white;
-    -webkit-box-shadow: 6px 6px 0 0 $green;
-    box-shadow: 6px 6px 0 0 $white;
+    background: $white;
+    border: solid $blue 2px;
+    color: $blue;
   }
 }
 
@@ -210,7 +209,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba($green, .99);
+  background: rgba($blue, .99);
   @include z-index-3;
 }
 
@@ -232,15 +231,15 @@
   cursor: pointer;
   display: inline-block;
   padding: $spacing-small $spacing-large;
-  background-color: $black;
+  background-color: $white;
   color: $white;
   -webkit-transition: 300ms ease-in;
   transition: 300ms ease-in;
-
+  color: $blue;
   &:hover {
-    color: $green;
-    -webkit-box-shadow: 6px 6px 0 0 $white;
-    box-shadow: 6px 6px 0 0 $white;
+    background: $blue;
+    border: solid $white 2px;
+    color: $white;
   }
 }
 
@@ -248,5 +247,5 @@
   text-align: center;
   padding: $spacing-small;
   margin-top: $spacing-larger;
-  background: $yellow;
+  background: $blue;
 }
