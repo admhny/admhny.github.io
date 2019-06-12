@@ -1,0 +1,19 @@
+<li class="j-col j-col-{{include.col}} gallery-item">
+  <img class="js-project-img lazy" title="{{video.title}}" src="{{video.thumb}}" alt="{{video.desc}}" />
+  <div class="js-light-box video-light-box" style="display: none;">
+    <div class="js-light-box-close">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="js-light-box-content">
+      <div class="responsive-video">
+        <iframe src="{{video.src}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="js-light-box-txt">
+        <div class="js-more-info">Show info</div>
+          <h2>{{video.title}}</h2>
+          <span class="js-light-box-desc">{{video.text}}</span>
+      </div>
+    </div>
+  </div>
+</li>

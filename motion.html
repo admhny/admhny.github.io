@@ -1,0 +1,13 @@
+---
+title: Motion
+layout: default
+gallery: true
+---
+
+<section class="img">
+  <ul class="grid-container gallery">
+    {% for video in site.data.motion %}
+    {% include html/video-gallery.html col=3 %}
+    {% endfor %}
+  </ul>
+</section>

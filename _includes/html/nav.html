@@ -17,7 +17,14 @@
         <a href="{{"/photos" | relative_url }}">Photos</a>
         {% endif %}
       </li>
-      <!-- <li><a href="#0">Motion</a></li> -->
+      <li>
+        {% if page.url == "/motion/" %}
+        <a class="is-current" href="{{"/motion" | relative_url }}">Motion</a>
+        {% else %}
+        <a href="{{"/motion" | relative_url }}">Motion</a>
+        {% endif %}
+      </li>
+      <!-- <li><a href="#0">Design</a></li> -->
       <!-- <li>{% if page.url == "/design/" %}
           <a class="is-current" href="{{"/design" | relative_url }}">Design</a>
           {% else %}
