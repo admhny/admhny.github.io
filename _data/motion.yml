@@ -3,22 +3,22 @@
   title: 'Account Based Marketing Video | Marriott'
   desc: "I made 100 custom videos like this one for Adaptiva's top 100 prospects."
 
+- src: 'https://player.vimeo.com/video/170250511'
+  thumb: '/assets/img/thumbs/frederick-thumb.png'
+  title: 'Olympic Athlete Norris Frederick'
+  desc: "Intro for a web series on Norris Frederick's journey to the Olympics."
+
+- src: 'https://player.vimeo.com/video/215227005'
+  thumb: '/assets/img/thumbs/adaptiva-career-thumb.png'
+  title: 'Working at Adaptiva'
+  desc: "This is a video I made for Adaptiva to showcase why people should work there."   
+
 - src: 'https://player.vimeo.com/video/341677162'
   thumb: '/assets/img/thumbs/curling-thumb.png'
   title: 'Curling Party'
   desc: "This was a fun video I made to recap Adaptiva's curling party."
 
-- src: 'https://player.vimeo.com/video/215227005'
-  thumb: '/assets/img/thumbs/adaptiva-career-thumb.png'
-  title: 'Working at Adaptiva'
-  desc: "This is a video I made for Adaptiva to showcase why people should work there."
-
 - src: 'https://player.vimeo.com/video/320795833'
   thumb: '/assets/img/thumbs/evolve-vm-thumb.png'
   title: 'Evolve VM'
   desc: "This is a high-level video for Adaptiva on their product Evolve VM."
-
-- src: 'https://player.vimeo.com/video/170250511'
-  thumb: '/assets/img/thumbs/frederick-thumb.png'
-  title: 'Olympic Athlete Norris Frederick'
-  desc: "Intro for a web series on Norris Frederick's journey to the Olympics."
