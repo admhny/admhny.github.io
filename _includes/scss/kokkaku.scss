@@ -261,7 +261,7 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  height: 90vw;
+  height: 100vw;
   flex-direction: column;
   @media #{$tablet}, #{$mobile} {
     flex-direction: row;
@@ -589,10 +589,10 @@ nav.tertiary-nav {
   padding-bottom: 56.25%;
   iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 33px;
+    left: 33px;
+    width: 90%;
+    height: 90%;
   }
   @media #{$mobile} {
     top: 25%;

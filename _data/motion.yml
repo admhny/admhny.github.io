@@ -11,7 +11,12 @@
 - src: 'https://player.vimeo.com/video/215227005'
   thumb: '/assets/img/thumbs/adaptiva-career-thumb.png'
   title: 'Working at Adaptiva'
-  desc: "This is a video I made for Adaptiva to showcase why people should work there."   
+  desc: "This is a video I made for Adaptiva to showcase why people should work there."
+
+- src: 'https://player.vimeo.com/video/373464556'
+  thumb: '/assets/img/thumbs/onesite-vmware-thumb.jpg'
+  title: 'OneSite VMware Edition Explainer Video'
+  desc: "This is an explainer video I created for Adaptiva to help communicate what the product does."
 
 - src: 'https://player.vimeo.com/video/341677162'
   thumb: '/assets/img/thumbs/curling-thumb.png'

@@ -4,10 +4,10 @@ layout: default
 gallery: true
 ---
 
-<section class="img">
+<section class="photos">
   <ul class="grid-container gallery">
     {% for video in site.data.motion %}
-    {% include html/video-gallery.html col=3 %}
+    {% include html/video-gallery.html col=6 %}
     {% endfor %}
   </ul>
 </section>
