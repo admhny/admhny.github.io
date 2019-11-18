@@ -6,11 +6,13 @@
       <span></span>
     </div>
     <div class="js-light-box-content">
-      <div class="responsive-video">
-        <iframe src="{{video.src}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <div class="js-lightbox-video-wrap">
+        <div class="responsive-video">
+          <iframe src="{{video.src}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
       </div>
+      <div class="js-more-info">Show info</div>
       <div class="js-light-box-txt">
-        <div class="js-more-info">Show info</div>
           <h2>{{video.title}}</h2>
           <span class="js-light-box-desc">{{video.desc}}</span>
       </div>

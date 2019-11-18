@@ -35,17 +35,17 @@
   left: 0;
   background-color: $blue;
   @include z-index-2;
-  padding-left: 175px;
+  padding-left: 300px;
   @media #{$tablet},#{$mobile} {
     padding-left: 0;
   }
 }
 .js-light-box-content {
   height: 100%;
-  width: calc(100% - 175px);
+  width: calc(100% - 300px);
   position: absolute;
   top: 0;
-  left: 175px;
+  left: 300px;
   @media #{$tablet}, #{$mobile} {
     width: 100%;
     left: 0;
@@ -88,7 +88,7 @@
 .js-light-box-txt {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -100%;
   display: block;
   color: $white;
   background-color: transparent;
@@ -113,6 +113,7 @@
   }
   &.is-displayed {
     background-color: rgba($blue,.90);
+    right: 0;
     width: 100%;
     h2 {
       color: $light-gray;
@@ -244,5 +245,17 @@
     svg {
       transform: scale(1.3);
     }
+  }
+}
+.js-lightbox-video-wrap {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 4.2rem;
+  @media #{$tablet}, #{$mobile} {
+    padding: 0;
   }
 }
